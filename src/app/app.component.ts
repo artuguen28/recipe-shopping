@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  selectedPage: number = 0;
+
+  changePage(pageNumber: number) {
+    this.selectedPage = pageNumber;
+  }
 }
