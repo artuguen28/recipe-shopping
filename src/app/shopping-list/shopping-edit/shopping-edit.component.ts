@@ -5,7 +5,7 @@ import { ShoppingListService } from '../shopping-list.service';
 @Component({
   selector: 'app-shopping-edit',
   templateUrl: './shopping-edit.component.html',
-  styleUrl: './shopping-edit.component.css'
+  styleUrl: './shopping-edit.component.css',
 })
 export class ShoppingEditComponent {
   @ViewChild('nameInput') nameInputRef: ElementRef;
@@ -18,6 +18,6 @@ export class ShoppingEditComponent {
     const ingAmount = this.amountInputRef.nativeElement.value;
     const newIngredient = new Ingredient(ingName, ingAmount);
     this.slService.addIngredient(newIngredient);
-    
   }
 }
+  
