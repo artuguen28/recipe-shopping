@@ -5,11 +5,13 @@ export class ShoppingListService {
   ingredientsChanged = new Subject<Ingredient[]>();
   startEditing = new Subject<number>();
 
-  private ingredients: Ingredient[] = [
-    new Ingredient('Apples', 5),
-    new Ingredient('Tomatoes', 6),
-    new Ingredient('Pears', 10),
-  ];
+  // private ingredients: Ingredient[] = [
+  //   new Ingredient('Apples', 5),
+  //   new Ingredient('Tomatoes', 6),
+  //   new Ingredient('Pears', 10),
+  // ];
+
+  private ingredients: Ingredient[] = [];
 
   getIngredients() {
     return this.ingredients.slice();
